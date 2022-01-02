@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
-
- <parameter name="Browser" value="suite level parameter" />
- 
-	<test name="Parameter Test one">
-		<classes>
-			<class name="GitTestForGenkins.LaunchingBrowser">
-				<methods>
-					<include name="prameterTestOne" />
-				</methods>
-			</class>
-		</classes>
-	</test>
-	
-	<test name="Parameter Test two">
-		<classes>
-			<class name="GitTestForGenkins.LaunchingBrowser">
-				<methods>
-					<include name="prameterTest two" />
-				</methods>
-			</class>
-		</classes>
-	</test>
+  <test thread-count="5" name="Test">
+    <classes>
+    
+      <class name="GitTestForGenkins.LaunchingBrowser"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
